@@ -1,13 +1,13 @@
 apiVersion: core.choreo.dev/v1alpha1
 kind: ComponentConfig
 metadata:
-  name: matlab-test
+  name: matlab-service_test
   projectName: Flight Modeling
   annotations:
     componentType: service
 spec:
   inbound:
-    - name: MATLAB Test
+    - name: MATLAB-Service_Test
       port: 3000
       type: REST
       visibility: Project
