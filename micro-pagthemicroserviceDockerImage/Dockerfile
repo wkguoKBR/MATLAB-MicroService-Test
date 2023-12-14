@@ -3,6 +3,8 @@
 # Sample docker build command:
 # docker build --progress=plain --platform=linux/amd64 -f "Dockerfile" -t micro-pagthe "."
 
+USER 10001
+
 FROM matlabruntime/r2023b/release/update3/108000000000000000
 
 COPY ./applicationFilesForMATLABCompiler /usr/bin/mlrtapp
