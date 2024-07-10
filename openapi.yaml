@@ -24,3 +24,9 @@ paths:
       responses:
         '204':
           description: Resource deleted successfully
+  /api/health:
+    get:
+      summary: Get API health info
+      responses:
+        '200':
+          description: Successful health check
