@@ -9,7 +9,6 @@ paths:
         - default
       summary: Call MYPAGTHE Matlab Function
       requestBody: 
-        description: Specify nargout and rhs (two integers)
         required: true
         content:
           application/json:
