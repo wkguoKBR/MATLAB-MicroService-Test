@@ -25,7 +25,6 @@ paths:
                     type: integer
                     format: int64
                   minItems: 2
-                  maxItems: 2
       responses:
         "200":
           description: Successful response
