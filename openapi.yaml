@@ -24,7 +24,8 @@ paths:
                   items:
                     type: integer
                     format: int64
-                    example: 3
+                  minItems: 2
+                  maxItems: 2
       responses:
         "200":
           description: Successful response
