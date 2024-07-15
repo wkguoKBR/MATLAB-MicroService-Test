@@ -14,4 +14,5 @@ endpoints:
   networkVisibility: Public
   # +optional Context (base path) of the API that is exposed via this endpoint.
   context: /
+  # +optional Schema file path
   schemaFilePath: ../openapi.yaml
