@@ -3,24 +3,71 @@ info:
   title: MATLAB Test
   version: 1.0.0
 paths:
-  /*:
-    get:
-      summary: Retrieve an example resource
-      responses:
-        '200':
-          description: Successful response
+  /MYPAGTHE/MYPAGTHE:
     post:
-      summary: Create an example resource
+      tags:
+        - default
+      summary: Call MYPAGTHE Matlab Function
+      requestBody: 
+        description: Specify nargout and rhs (two integers)
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                nargout:
+                  type: integer
+                  format: int64
+                  example: 1
+                rhs:
+                  type: array
+                  items:
+                      type: integer
+                      format: int64
       responses:
-        '201':
-          description: Resource created successfully
-    put:
-      summary: Update an example resource
-      responses:
-        '200':
-          description: Resource updated successfully
-    delete:
-      summary: Delete an example resource
-      responses:
-        '204':
-          description: Resource deleted successfully
+        "200":
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  lhs: 
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        mwdata:
+                          type: array
+                          items:
+                            type: integer
+                            format: int64
+                        mwsize:
+                          type: array
+                          items:
+                            type: integer
+                            format: int64
+                        mytype:
+                          type: string
+  # /*:
+  #   get:
+  #     summary: Retrieve an example resource
+  #     responses:
+  #       '200':
+  #         description: Successful response
+  #   post:
+  #     summary: Create an example resource
+  #     responses:
+  #       '201':
+  #         description: Resource created successfully
+  #   put:
+  #     summary: Update an example resource
+  #     responses:
+  #       '200':
+  #         description: Resource updated successfully
+  #   delete:
+  #     summary: Delete an example resource
+  #     responses:
+  #       '204':
+  #         description: Resource deleted successfully
