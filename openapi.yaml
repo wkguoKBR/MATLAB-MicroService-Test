@@ -22,14 +22,9 @@ paths:
                 rhs:
                   type: array
                   items:
-                    arg1:
-                      type: integer
-                      format: int64
-                      example: 3
-                    arg2:
-                      type: integer
-                      format: int64
-                      example: 4
+                    type: integer
+                    format: int64
+                    example: 3
       responses:
         "200":
           description: Successful response
