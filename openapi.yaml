@@ -40,12 +40,8 @@ paths:
                         mwdata:
                           type: array
                           items:
-                            arg1:
-                              type: integer
-                              format: int64
-                            arg2:
-                              type: integer
-                              format: int64
+                            type: integer
+                            format: int64
                         mwsize:
                           type: array
                           items:
