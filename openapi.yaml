@@ -48,7 +48,7 @@ paths:
                             type: integer
                             format: int64
                         mytype:
-                          type: string
+                          type: double
   # /*:
   #   get:
   #     summary: Retrieve an example resource
